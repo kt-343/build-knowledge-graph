@@ -19,7 +19,7 @@ python train.py --data_dir dataset --vocab_dir vocab --id 00
 
 Model checkpoints will be saved to `./saved_models/00`
 
-## Evaluation
+## Evaluation on test.json
 
 Run evaluation on the test set with:
 ```
@@ -28,3 +28,12 @@ python eval.py saved_models/00 --dataset test
 
 This will use the `best_model.pt` by default. Use `--model checkpoint_epoch_xx.pt` to specify a model checkpoint file.
 AEvaluations are saved to `dataset/evaluated.json`
+
+
+## Evaluation on sample text
+
+Run notebook plot_graph.ipynb and provide sample text to view graph in notebook
+or provide sample text in plot_graph.py and run
+```
+python plot_graph.py
+```
