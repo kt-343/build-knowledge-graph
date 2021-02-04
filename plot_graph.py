@@ -172,7 +172,7 @@ def draw_kg(pairs):
                                       create_using=nx.MultiDiGraph())
     node_deg = nx.degree(k_graph)
     layout = nx.spring_layout(k_graph, k=0.15, iterations=20)
-    plt.figure(num=None, figsize=(30, 30), dpi=200)
+    plt.figure(num=None, figsize=(120, 90), dpi=80)
     nx.draw_networkx(
         k_graph,
         node_size=[int(deg[1]) * 500 for deg in node_deg],
