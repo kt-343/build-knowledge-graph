@@ -20,6 +20,10 @@ To evaluate trained model, training data is split into train and dev by 80:20 sp
 Results on dev set:
 `Precision: 87.996%   Recall: 88.856%   F1 : 88.424%`
 
+## Limitations
+- Train data is not annotated with NERs. Having NER lables of subject and object would produce better entity relation extraction.
+- Relations from sentence to sentence are not formed since the training is sone at sentence level rather than document level. To solve this, Coreference resolution should be implemented.
+
 ## Source
 Position-aware Attention and Supervised Data Improve Slot Filling (by Yuhao Zhang, Victor Zhong, Danqi Chen, Gabor Angeli, Christopher D. Manning)
 https://nlp.stanford.edu/pubs/zhang2017tacred.pdf
