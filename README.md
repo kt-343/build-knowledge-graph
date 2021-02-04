@@ -20,6 +20,10 @@ To evaluate trained model, training data is split into train and dev by 80:20 sp
 Results on dev set:
 `Precision: 87.996%   Recall: 88.856%   F1 : 88.424%`
 
+## Model and Vocab Files
+Download and extract model files: (https://drive.google.com/file/d/17fF2XqU6nkNktf6gmDGhAuhpCl49qzLi/view?usp=sharing) to `./saved_models/00`
+Download and extract vocab and embeddings files: (https://drive.google.com/file/d/1Z4kZBgA7Mv6WqhhS8qj1bigb7zPvAKU6/view?usp=sharing) to `./vocab`
+
 ## Limitations
 - Train data is not annotated with NERs. Having NER lables of subject and object would produce better entity relation extraction.
 - Relations from sentence to sentence are not formed since the training is sone at sentence level rather than document level. To solve this, Coreference resolution should be implemented.
